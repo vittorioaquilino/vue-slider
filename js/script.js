@@ -49,5 +49,10 @@ const app = new Vue(
                 }
             },
         },
+        created() {
+            setInterval(() => 
+            this.addNext() 
+            ,3000);
+        }
     }
 )
